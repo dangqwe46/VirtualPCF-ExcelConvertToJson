@@ -1,0 +1,7 @@
+.excel-converter {
+    padding: 10px;
+}
+
+.excel-converter .ms-Button {
+    max-width: 200px;
+}

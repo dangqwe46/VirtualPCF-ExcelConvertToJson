@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Watson" constructor="ExcelConvertJSON" version="0.0.1" display-name-key="ExcelConvertJSON" description-key="ExcelConvertJSON description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="labelButton" display-name-key="labelButton" description-key="Button label" of-type="SingleLine.Text" usage="bound" required="true" default-value="Choose file" />
+    <property name="allowedFormats" display-name-key="allowedFormats" description-key="Allowed formats" of-type="SingleLine.Text" usage="bound" required="false" default-value="all" />
+    <property name="iconButton" display-name-key="actionIcon" description-key="Action icon name" of-type="SingleLine.Text" usage="bound" required="false" default-value="Attach" />
+    <property name="files" display-name-key="Files" description-key="Selected Files" of-type="SingleLine.Text" usage="bound" />
+    <property name="triggerReset" display-name-key="triggerReset" description-key="Reset files array by chaning the value" of-type="SingleLine.Text" usage="bound" required="true" default-value="0" />
+    <property name="fileName" display-name-key="Control Value" description-key="Control value" of-type="SingleLine.Text" usage="output" required="true" />
+    <property name="jsonOutput" display-name-key="JSON Output" description-key="Converted JSON output" of-type="SingleLine.Text" usage="output" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <css path="css/ExcelConvertJSON.css" order="1" />
+    </resources>
+  </control>
+</manifest>
